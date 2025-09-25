@@ -5,11 +5,13 @@ import AppMain from './components/AppMain.jsx';
 import AppHeader from './components/AppHeader.jsx';
 import AppBlueBar from './components/AppBlueBar.jsx';
 import AppBlackBar from './components/AppBlackBar.jsx';
-// ...existing code...
+
+
 
 function App() {
       return (
             <div>
+
                   <AppHeader />
                   <AppBlackBar />
                   <AppBlueBar />
