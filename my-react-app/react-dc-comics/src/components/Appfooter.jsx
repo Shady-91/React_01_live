@@ -1,9 +1,18 @@
 import footerBg from '../assets/img/footer-bg.jpg';
+import dcLogoBg from '../assets/img/dc-logo-bg.png';
+import facebookIcon from '../assets/img/footer-facebook.png';
+import twitterIcon from '../assets/img/footer-twitter.png';
+import pinterestIcon from '../assets/img/footer-pinterest.png';
+import youtubeIcon from '../assets/img/footer-youtube.png';
+
+// ...e così via per ogni social
 
 function Appfooter() {
       return (
-            <div className="footer-section">
-                  <div className="footer-columns footer-columns-bg">
+            <div className="footer-section" style={{ position: 'relative', overflow: 'hidden' }}>
+                  <img src={footerBg} alt="sfondo" className="footer-bg" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }} />
+                  <img src={dcLogoBg} alt="logo" className="footer-top-right" style={{ position: 'absolute', top: 0, right: 0, width: '320px', opacity: 0.8, pointerEvents: 'none', zIndex: 2 }} />
+                  <div className="footer-columns" style={{ position: 'relative', zIndex: 1 }}>
                         <div>
                               <h4>DC COMICS</h4>
                               <ul>
@@ -52,14 +61,14 @@ function Appfooter() {
                         <button className="signup-btn">SIGN-UP NOW!</button>
                         <div className="social">
                               <span>FOLLOW US</span>
-                              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" /></a>
-                              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24" /></a>
-                              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="YouTube" width="24" /></a>
-                              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733590.png" alt="Pinterest" width="24" /></a>
-                              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Periscope" width="24" /></a>
+                              <img src={facebookIcon} alt="Facebook" width="24" />
+                              <img src={twitterIcon} alt="twitter" width="24" />
+                              <img src={youtubeIcon} alt="youtube" width="24" />
+                              <img src={pinterestIcon} alt="pinterest" width="24" />
+                              <img src={pinterestIcon} alt="pinterest" width="24" />
                         </div>
                   </div>
-            </div>
+            </div >
       );
 }
 

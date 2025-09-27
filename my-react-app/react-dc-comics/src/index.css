@@ -1,3 +1,61 @@
+/* Stile per rendere visibile il blocco footer-signup */
+.footer-signup {
+      margin-top: 40px;
+      padding: 24px 0 16px 0;
+      text-align: center;
+      color: blue;
+      z-index: 3;
+      position: relative;
+}
+
+.signup-btn {
+      background: black;
+      color: white;
+      border: blue;
+      padding: 12px 32px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 16px;
+      margin-top: 8px;
+}
+
+.signup-btn:hover {
+      background: #005bb5;
+}
+
+.footer-signup .social {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+}
+
+.footer-signup .social span {
+      font-weight: bold;
+      margin-right: 10px;
+      color: #fff;
+      letter-spacing: 1px;
+}
+
+.footer-columns h4 {
+      color: white;
+}
+
+.footer-columns ul {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+}
+
+.footer-columns ul li {
+      color: #b0b0b0;
+      text-align: left;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 .header-top {
       display: flex;
       align-items: center;
@@ -32,7 +90,7 @@
       /* allinea a sinistra */
       font-size: 0.6rem;
       /* scritta più piccola */
-      font-family: 'Arial', sans-serif;
+      font-family: 'open sans';
       font-weight: bold;
       width: 100%;
       margin: 0;
@@ -66,7 +124,7 @@
       font-weight: bold;
       gap: 15px;
       /* Spazio tra icona e testo */
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: white
 }
 
@@ -76,4 +134,26 @@
       background-position: center;
       background-repeat: no-repeat;
       color: white
+}
+
+.footer-columns {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      margin-left: -30px;
+}
+
+.footer-columns>div {
+      text-align: center;
+}
+
+body {
+      font-family: 'Open Sans';
+}
+
+.footer-signup {
+      text-align: start;
 }
