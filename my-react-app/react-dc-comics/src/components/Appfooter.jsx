@@ -1,7 +1,9 @@
+import footerBg from '../assets/img/footer-bg.jpg';
+
 function Appfooter() {
       return (
             <div className="footer-section">
-                  <div className="footer-columns">
+                  <div className="footer-columns footer-columns-bg">
                         <div>
                               <h4>DC COMICS</h4>
                               <ul>
